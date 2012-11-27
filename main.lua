@@ -10,7 +10,7 @@ creep_popup_interval = 15 -- seconds
 zombo_popup_interval = 10 -- seconds
 
 creep_speed = 1
-creep_speed_increment = 1
+creep_speed_increment = 0.3
 
 points_per_apple = 1
 
