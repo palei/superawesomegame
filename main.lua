@@ -10,7 +10,7 @@ creep_popup_interval = 15 -- seconds
 zombo_popup_interval = 10 -- seconds
 
 creep_speed = 1
-creep_speed_increment = 0.3
+creep_speed_increment = 0.2
 
 points_per_apple = 1
 
@@ -165,9 +165,8 @@ function dead:enter()
 end
 
 function dead:draw()
-  love.graphics.print("YOU WERE EATEN ALIVE!.", 230, 200)
-  love.graphics.print("Good thing you have " .. lives_left .. 
-    " more lives left.", 230, 250)
+  love.graphics.print("YOU HAVE DIED!.", 230, 200)
+  love.graphics.print("But you have " .. lives_left .. " lives left.", 230, 250)
   love.graphics.print("Press any key to continue.", 230, 300)
 end
 
