@@ -32,6 +32,13 @@ dead = GS.new()
 over = GS.new()
 paus = GS.new()
 
+-- internal variables
+start_time = love.timer.getTime()
+
+last_apple_time = start_time
+last_creep_time = start_time
+last_zombo_time = start_time
+
 -- MENU STATE
 function menu:enter()
   love.graphics.setCaption(game_name .. " - Menu")
@@ -61,12 +68,6 @@ end
 function game:enter()
   love.graphics.setCaption(game_name .. " - Playing")
 
-  start_time = love.timer.getTime()
-  
-  last_apple_time = start_time
-  last_creep_time = start_time
-  last_zombo_time = start_time
-  
   love.audio.play(music)
   love.mouse.setVisible(false)
 end
